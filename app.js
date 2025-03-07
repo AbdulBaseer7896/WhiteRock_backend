@@ -23,8 +23,9 @@ const app = express();
 // Update CORS configuration to match exactly
 app.use(cors({
   origin: [
-    'http://localhost:5173', // Remove trailing slash
-    'https://whiterocklogistics.netlify.app/'
+    'https://whiterocklogistics.netlify.app'
+    // https://whiterocklogistics.netlify.app/
+    // 'http://localhost:5173', // Remove trailing slash
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Explicitly allowed methods
